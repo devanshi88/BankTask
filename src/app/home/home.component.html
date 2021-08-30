@@ -1,0 +1,41 @@
+<form class="container pa">
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Select Bank</label>
+      <select class="form-control" (change) = "getBankValue($event)">
+        <option *ngFor = "let bank of banks" [value] = "bank.id">{{bank.Name}}</option>
+      </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">bankcode</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="bank code"
+        [value] = "bankCode">
+      </div>
+
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">IFSC Code</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="IFSCCode"
+        [value] = "IFSCCode">
+      </div>
+      
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Authentication Method</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Authentication Method
+        " [value] = "authMethod">
+      </div>
+
+
+<!-- 
+      <span>you select:{{selectBankName}}</span><br>
+      <span>you select:{{bankCode}}</span><br>
+      <span>you select:{{IFSCCode}}</span><br> -->
+<!--       
+  <span *ngIf="netBanking && debitcard"> netbanking + debitCard</span><br>
+  <span *ngIf="netBanking"> netbanking</span><br>
+  <span *ngIf="debitcard">debitCard</span> <br> -->
+
+
+  </form>

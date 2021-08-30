@@ -1,0 +1,7 @@
+.pa{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    box-shadow: inset 0 0 110px -50px #000;
+}
